@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    background-color: brown;
+    font-size: 1.2em;
+}
+
+.imageContainer{
+    height: 15.3em;
+    .caratula{
+        position: absolute;
+        max-height: 15.6em;
+    }
+    .box{
+        position: relative;
+        padding-top: 2em;
+        text-align: center;
+    }
+    .top{
+        position: relative;
+        -webkit-text-stroke: .6px black;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Segoe Script';
+    }
+    .middle{
+        position: relative;
+        -webkit-text-stroke: .9px black;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Segoe Script';
+    }
+}
+
+
+
+.intro{
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    .titulo, .subtitulo{
+        font-family: 'Bangers', cursive;
+    }
+    .subtitulo{
+        font-size: 1.5em;
+    }
+    section{
+        padding: 1em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 3em;
+        background-color: #fafafa;
+        border-radius: 1em;
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+            img{
+                margin: 1em 0;
+            }
+            .dije{
+                max-height: 15em;
+            }
+            .anillo{
+                max-height: 15em;
+            }
+            .pulsera{
+                max-height: 15em;
+            }
+        }
+        .titulo{
+            font-size: 2em;
+        }
+        .desc{
+            margin-top: 1em;
+            font-size: 1.1em;
+        }
+        .profesor{
+            margin-top: 2em;
+            max-height: 30em;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    span{
+        margin: .3em;
+    }
+    a{
+        text-decoration: none;
+        color: lightgray;
+    }
+    .contactenos{
+        font-size: 2em;
+        margin: 0;
+    }
+    .first{
+        padding-top: 1em;
+    }
+    .last{
+        padding-bottom: 1em;
+    }
+}

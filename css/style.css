@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: brown;
+  font-size: 1.2em;
+}
+
+header ul {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.imageContainer {
+  height: 15.3em;
+}
+
+.imageContainer .caratula {
+  position: absolute;
+  max-height: 15.6em;
+}
+
+.imageContainer .box {
+  position: relative;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.imageContainer .top {
+  position: relative;
+  -webkit-text-stroke: .6px black;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe Script';
+}
+
+.imageContainer .middle {
+  position: relative;
+  -webkit-text-stroke: .9px black;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe Script';
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro .titulo, .intro .subtitulo {
+  font-family: 'Bangers', cursive;
+}
+
+.intro .subtitulo {
+  font-size: 1.5em;
+}
+
+.intro section {
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 3em;
+  background-color: #fafafa;
+  border-radius: 1em;
+}
+
+.intro section .imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro section .imagenes img {
+  margin: 1em 0;
+}
+
+.intro section .imagenes .dije {
+  max-height: 15em;
+}
+
+.intro section .imagenes .anillo {
+  max-height: 15em;
+}
+
+.intro section .imagenes .pulsera {
+  max-height: 15em;
+}
+
+.intro section .titulo {
+  font-size: 2em;
+}
+
+.intro section .desc {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.intro section .profesor {
+  margin-top: 2em;
+  max-height: 30em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: brown;
+  color: white;
+}
+
+footer span {
+  margin: .3em;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+footer .contactenos {
+  font-size: 2em;
+  margin: 0;
+}
+
+footer .first {
+  padding-top: 1em;
+}
+
+footer .last {
+  padding-bottom: 1em;
+}
+/*# sourceMappingURL=style.css.map */
