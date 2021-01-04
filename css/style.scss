@@ -3,9 +3,15 @@ body{
     height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1583002166250-8b2e649d4ba0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    
 }
 header{
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     ul{
         width: 100%;
         list-style: none;
@@ -23,19 +29,25 @@ header{
 
 .imageContainer{
     height: 15.3em;
+    margin-bottom: 7em;
     .caratula{
+        margin-top: 4em;
         position: absolute;
         max-height: 15.6em;
+        z-index: -1;
     }
     .box{
         position: relative;
-        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+        padding-top: 4.5em;
         text-align: center;
     }
     .top{
         position: relative;
         -webkit-text-stroke: .6px black;
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: bold;
         color: white;
         font-family: 'Segoe Script';
@@ -48,13 +60,36 @@ header{
         color: white;
         font-family: 'Segoe Script';
     }
+    .subBox{
+        position: relative;
+        z-index: -1;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5em;
+    }
+    .left{
+        position: relative;
+        -webkit-text-stroke: .9px black;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Segoe Script';
+    }
+    .right{
+        position: relative;
+        -webkit-text-stroke: .9px black;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Segoe Script';
+    }
 }
 
 
 
 .intro{
     display: flex;
-    margin-top: 2em;
+    margin-top: 3em;
     flex-direction: column;
     .titulo, .subtitulo{
         font-family: 'Bangers', cursive;
@@ -68,8 +103,12 @@ header{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        .informacion{
+            display: flex;
+            flex-direction: column;
+        }
         margin: 0 3em;
-        background-color: #fafafa;
+        background-color: #524543d5;
         border-radius: 1em;
         .imagenes{
             display: flex;
@@ -89,10 +128,51 @@ header{
         }
         .titulo{
             font-size: 2em;
+            color: white;
         }
         .desc{
+            color: white;
             margin-top: 1em;
             font-size: 1.1em;
+        }
+        .desc1{
+            color: white;
+            font-size: 1.7em;
+            .presenta{
+                border-bottom: 3px solid #ccc;
+            }
+        }
+        .desc2{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            .desc2_1{
+                margin-left: 1em;
+                font-size: 1.4em;
+                border-bottom: 3px solid #ccc;
+            }
+        }
+        .desc3{
+            position: relative;
+            border-top: 1px solid #ccc;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            .desc3_1{
+                font-size: 1.4em;
+                border-bottom: 3px solid #ccc;
+            }
+        }
+        .casa{
+            color: white;
+            font-size: 1.7em;
+            font-family: 'Segoe Script';
+            .taller{
+                position: relative;
+                margin-top: -1em;
+                font-size: 0.8em;
+            }
         }
         .profesor{
             margin-top: 2em;
@@ -101,7 +181,7 @@ header{
     }
 }
 
-footer{
+footer, .footWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,5 +203,284 @@ footer{
     }
     .last{
         padding-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 390px){
+    .imageContainer{
+        .caratula{
+            max-height: 250px;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 542px){
+    .desc{
+        padding: 0 2em;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .imageContainer{
+        margin-bottom: 10em;
+        .caratula{
+            max-height: 300px;
+        }
+        .top{
+            font-size: 3.5em;
+        }
+        .middle{
+            font-size: 3.5em;
+        }
+    }
+    .subBox{
+        margin-top: -1em;
+    }
+    .profesor{
+        width: 80%;
+        height: 600px;
+    }
+    .imagenes{
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (min-width: 700px){
+    .imageContainer{
+        margin-bottom: 16em;
+        .caratula{
+            max-height: 400px;
+        }
+    }
+    .subBox{
+        margin-top: 4em;
+        .left{
+            font-size: 2em;
+        }
+        .right{
+            font-size: 2em;
+        }
+    }
+    .imagenes{
+        width: 80%;
+    }
+    .intro{
+        section{
+            .profesor{
+                width: 50%;
+                max-height: none;
+                height: 500px;
+            }
+            .imagenes{
+                .dije, .anillo, .pulsera{
+                    max-height: none;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .intro{
+        section{
+            .titulo{
+                font-size: 3em;
+            }
+            .desc{
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    header{
+        font-size: 1.5em;
+    }
+    .portada{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: -7em;
+        .imageContainer{
+            width: 50%;
+            margin-top: 1em;
+            margin-right: 9%;
+            .caratula{
+                border-radius: 1em;
+                width: 50%;
+            }
+            .box{
+                position: absolute;
+                margin-left: 1.5em;
+            }
+            .subBox{
+                margin-top: 1em;
+            }
+        }
+        .intro{
+            width: 50%;
+            section{
+                margin-top: 18%;
+            }
+        }
+    }
+    .intro{
+        .informacion{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .informacion{
+                width: 50%;
+                margin-top: -1em;
+            }
+            .imagenProf{
+                width: 50%;
+                right: 0;
+            }
+        }
+        section{
+            .titulo{
+                font-size: 3em;
+            }
+            .imagenes{
+                margin-top: 2em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                .dije, .anillo, .pulsera{
+                    max-height: none;
+                    width: 320px;
+                    height: 400px;
+                }
+                .desc{
+                    position: relative;
+                    font-size: 1.5em;
+                    padding-top: 4em;
+                    z-index: 0;
+                    
+                }
+                .modulos{
+                    font-size: 3em;
+                }
+            }
+            .expo{
+                margin-top: 5em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                .expo1{
+                    font-size: 2em;
+                }
+                .fomento{
+                    margin-top: 1em;
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+    .footWrapper{
+        margin: 2em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        .first, .last{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 1.3em;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1060px){
+    .portada{
+        margin: 0px 3%;
+        margin-bottom: 25em;
+        .imageContainer{
+            margin: 0;
+            margin-bottom: 15em;
+            margin-top: 5em;
+            .caratula{
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                margin-top: 3em;
+                margin-right: 15em;
+                width: 47%;
+                max-height: none;
+                height: 500px;
+            }
+            .box{
+                position: relative;
+                margin: 0;
+                width: 100%;
+                .top{
+                    font-size: 3em;
+                }
+                .middle{
+                    font-size: 2.5em;
+                }
+            }
+            .subBox{
+                margin-top: 10em;
+            }
+        }
+    }
+    .informacion{
+        align-items: center;
+    }
+    .desc{
+        padding: 0 5em;
+    }
+    
+    .segunda{
+        padding: 0;
+    }
+    .intro{
+        section{ 
+            .imagenes{
+                .dije, .anillo, .pulsera{
+                    width: 30%;
+                    border: 1px solid black;
+                }
+                .desc{
+                    position: relative;
+                    padding-top: 2em; 
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .portada{
+        .imageContainer{
+            .box{
+                position: relative;
+                margin: 0;
+                width: 100%;
+                .top{
+                    font-size: 5em;
+                }
+                .middle{
+                    font-size: 3.5em;
+                }
+                .subBox{
+                    margin-top: 5em;
+                }
+            }
+        }
     }
 }
