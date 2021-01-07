@@ -88,7 +88,6 @@ header{
 
 
 .intro{
-    display: flex;
     margin-top: 3em;
     flex-direction: column;
     .titulo, .subtitulo{
@@ -135,6 +134,9 @@ header{
             margin-top: 1em;
             font-size: 1.1em;
         }
+        .modulos{
+            font-size: 1.7em;
+        }
         .desc1{
             color: white;
             font-size: 1.7em;
@@ -176,7 +178,8 @@ header{
         }
         .profesor{
             margin-top: 2em;
-            max-height: 30em;
+            width: 100%;
+            max-height: 20em;
         }
     }
 }
@@ -269,7 +272,7 @@ footer, .footWrapper{
     .intro{
         section{
             .profesor{
-                width: 50%;
+                width: 100%;
                 max-height: none;
                 height: 500px;
             }
@@ -291,6 +294,9 @@ footer, .footWrapper{
             }
             .desc{
                 font-size: 1.4em;
+            }
+            .modulos{
+                font-size: 2em;
             }
         }
     }

@@ -109,9 +109,6 @@ header a {
 }
 
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 3em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -192,6 +189,10 @@ header a {
   font-size: 1.1em;
 }
 
+.intro section .modulos {
+  font-size: 1.7em;
+}
+
 .intro section .desc1 {
   color: white;
   font-size: 1.7em;
@@ -249,7 +250,8 @@ header a {
 
 .intro section .profesor {
   margin-top: 2em;
-  max-height: 30em;
+  width: 100%;
+  max-height: 20em;
 }
 
 footer, .footWrapper {
@@ -347,7 +349,7 @@ footer .last, .footWrapper .last {
     width: 80%;
   }
   .intro section .profesor {
-    width: 50%;
+    width: 100%;
     max-height: none;
     height: 500px;
   }
@@ -363,6 +365,9 @@ footer .last, .footWrapper .last {
   }
   .intro section .desc {
     font-size: 1.4em;
+  }
+  .intro section .modulos {
+    font-size: 2em;
   }
 }
 
