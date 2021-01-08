@@ -454,7 +454,7 @@ footer .last, .footWrapper .last {
   }
   .intro section .imagenes .dije, .intro section .imagenes .anillo, .intro section .imagenes .pulsera {
     max-height: none;
-    width: 320px;
+    width: 400px;
     height: 400px;
   }
   .intro section .imagenes .desc {
@@ -553,7 +553,6 @@ footer .last, .footWrapper .last {
     padding: 0;
   }
   .intro section .imagenes .dije, .intro section .imagenes .anillo, .intro section .imagenes .pulsera {
-    width: 30%;
     border: 1px solid black;
   }
   .intro section .imagenes .desc {
