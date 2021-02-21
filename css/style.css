@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', 'Yellowtail', Geneva, Verdana, sans-serif;
   background-image: url("https://images.unsplash.com/photo-1583002166250-8b2e649d4ba0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   font-display: swap;
 }
@@ -68,7 +69,7 @@ header a {
   font-size: 2.5em;
   font-weight: bold;
   color: white;
-  font-family: 'Segoe Script';
+  font-family: 'Segoe Script', 'Yellowtail';
 }
 
 .imageContainer .middle {
@@ -77,7 +78,7 @@ header a {
   font-size: 2em;
   font-weight: bold;
   color: white;
-  font-family: 'Segoe Script';
+  font-family: 'Segoe Script', 'Yellowtail';
 }
 
 .imageContainer .subBox {
@@ -97,7 +98,7 @@ header a {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
-  font-family: 'Segoe Script';
+  font-family: 'Segoe Script', 'Yellowtail';
 }
 
 .imageContainer .right {
@@ -106,11 +107,11 @@ header a {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
-  font-family: 'Segoe Script';
+  font-family: 'Segoe Script', 'Yellowtail';
 }
 
 .intro {
-  margin-top: 3em;
+  margin-top: 10em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -126,7 +127,7 @@ header a {
 }
 
 .intro section {
-  padding: 1em 1em;
+  padding: 1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,6 +162,9 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro section .imagenes img {
@@ -168,15 +172,31 @@ header a {
 }
 
 .intro section .imagenes .dije {
-  max-height: 15em;
+  width: 100%;
 }
 
 .intro section .imagenes .anillo {
-  max-height: 15em;
+  width: 100%;
 }
 
 .intro section .imagenes .pulsera {
-  max-height: 15em;
+  width: 100%;
+}
+
+.intro section .imagenes .piedras {
+  width: 100%;
+}
+
+.intro section .imagenes .anillo-gris {
+  width: 100%;
+}
+
+.intro section .imagenes .cartel {
+  width: 100%;
+}
+
+.intro section .imagenes .gente {
+  width: 100%;
 }
 
 .intro section .titulo {
@@ -194,6 +214,14 @@ header a {
   font-size: 1.7em;
 }
 
+.intro section .segunda-opcion {
+  width: 100%;
+}
+
+.intro section .expo1 {
+  padding: 0 3em;
+}
+
 .intro section .desc1 {
   color: white;
   font-size: 1.7em;
@@ -209,13 +237,10 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .intro section .desc2 .desc2_1 {
-  margin-left: 1em;
+  margin: 0 auto;
   font-size: 1.4em;
   border-bottom: 3px solid #ccc;
 }
@@ -227,12 +252,10 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .intro section .desc3 .desc3_1 {
+  margin: 0 auto;
   font-size: 1.4em;
   border-bottom: 3px solid #ccc;
 }
@@ -275,8 +298,12 @@ footer span, .footWrapper span {
 }
 
 footer a, .footWrapper a {
-  text-decoration: none;
+  text-decoration: underline;
   color: lightgray;
+}
+
+footer a:hover, .footWrapper a:hover {
+  color: blue;
 }
 
 footer .contactenos, .footWrapper .contactenos {
@@ -326,7 +353,7 @@ footer .last, .footWrapper .last {
     height: 600px;
   }
   .imagenes {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -348,6 +375,9 @@ footer .last, .footWrapper .last {
   }
   .imagenes {
     width: 80%;
+  }
+  .imagenes .anillo-gris {
+    width: 100%;
   }
   .intro section .profesor {
     width: 100%;
@@ -386,18 +416,24 @@ footer .last, .footWrapper .last {
             flex-direction: row-reverse;
     margin-bottom: -7em;
   }
+  .portada .title {
+    height: 17.8em;
+  }
   .portada .imageContainer {
     width: 50%;
     margin-top: 1em;
     margin-right: 9%;
   }
   .portada .imageContainer .caratula {
+    margin-top: 7em;
     border-radius: 1em;
     width: 50%;
+    height: 20em;
   }
   .portada .imageContainer .box {
+    margin-top: 2em;
     position: absolute;
-    margin-left: 1.5em;
+    margin-left: 1em;
   }
   .portada .imageContainer .subBox {
     margin-top: 1em;
@@ -406,7 +442,10 @@ footer .last, .footWrapper .last {
     width: 50%;
   }
   .portada .intro section {
-    margin-top: 18%;
+    margin-top: -6.5%;
+  }
+  .portada .intro section .casa {
+    font-size: 1.4em;
   }
   .intro .informacion {
     display: -webkit-box;
@@ -445,10 +484,10 @@ footer .last, .footWrapper .last {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -461,7 +500,6 @@ footer .last, .footWrapper .last {
   .intro section .imagenes .desc {
     position: relative;
     font-size: 1.5em;
-    padding-top: 4em;
     z-index: 0;
   }
   .intro section .imagenes .modulos {
@@ -472,10 +510,10 @@ footer .last, .footWrapper .last {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -513,6 +551,9 @@ footer .last, .footWrapper .last {
     margin: 0px 3%;
     margin-bottom: 25em;
   }
+  .portada .intro section .casa {
+    font-size: 2em;
+  }
   .portada .imageContainer {
     margin: 0;
     margin-bottom: 15em;
@@ -548,10 +589,19 @@ footer .last, .footWrapper .last {
             align-items: center;
   }
   .desc {
-    padding: 0 5em;
+    padding: 1em 1em;
   }
   .segunda {
     padding: 0;
+  }
+  .intro section {
+    margin: auto 3em auto 0;
+  }
+  .intro section .casa {
+    font-size: 2em;
+  }
+  .intro section .info {
+    padding: 0 4em;
   }
   .intro section .imagenes .dije, .intro section .imagenes .anillo, .intro section .imagenes .pulsera {
     border: 1px solid black;
@@ -566,6 +616,38 @@ footer .last, .footWrapper .last {
 }
 
 @media only screen and (min-width: 1500px) {
+  .intro section .imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro section .imagenes .desc {
+    padding: 0 1em 0 0;
+    line-height: 2em;
+    margin: 0;
+  }
+  .intro section .imagenes .desc .fomento {
+    line-height: 0;
+  }
+  .intro section .segunda-opcion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro section .segunda-opcion .pulsera {
+    width: 100%;
+  }
+  .intro section .segunda-opcion .anillo-gris {
+    width: 687px;
+  }
   .portada .imageContainer .box {
     position: relative;
     margin: 0;
