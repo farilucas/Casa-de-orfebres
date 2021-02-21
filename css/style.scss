@@ -493,7 +493,7 @@ footer, .footWrapper{
     }
     .intro{
         section{ 
-            margin: auto 3em auto 0;
+            margin: 31em 0 auto 0;
             .casa{
                 font-size: 2em;
             }
@@ -540,6 +540,14 @@ footer, .footWrapper{
         }
     }
     .portada{
+        .intro{
+            section{
+                margin-top: -4%;
+                .desc{
+                    padding: 0 4em;
+                }
+            }
+        }
         .imageContainer{
             .box{
                 position: relative;

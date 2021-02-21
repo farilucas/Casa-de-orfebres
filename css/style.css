@@ -595,7 +595,7 @@ footer .last, .footWrapper .last {
     padding: 0;
   }
   .intro section {
-    margin: auto 3em auto 0;
+    margin: 31em 0 auto 0;
   }
   .intro section .casa {
     font-size: 2em;
@@ -647,6 +647,12 @@ footer .last, .footWrapper .last {
   }
   .intro section .segunda-opcion .anillo-gris {
     width: 687px;
+  }
+  .portada .intro section {
+    margin-top: -4%;
+  }
+  .portada .intro section .desc {
+    padding: 0 4em;
   }
   .portada .imageContainer .box {
     position: relative;
